@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Title Here</title>
+  
+</head>
+<body>
+	{{ BABLIC_SNIPPET|safe }}
+	{% if locale %}
+	<script>
+		bablic.locale = "{{ locale }}";
+	</script>
+	{% endif %}
+
+    {% block content %}
+	{% endblock %}
+
+    <footer>
+      <p>For more advanced options see <a href="http://www.bablic.com/docs">our docs</a></p>
+    </footer>
+
+</body>
+</html>
