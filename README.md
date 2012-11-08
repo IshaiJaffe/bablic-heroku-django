@@ -74,13 +74,13 @@ Add the context processor in your settings.py
 		"app_name.context_processors.bablic")
 
 Add the snippet injection in you layout html file
+
 	<html>
 		<head>
 		...
 		</head>
 	<body>
-		{{ BABLIC_SNIPPET|safe }}
-	
+		{{ BABLIC_SNIPPET|safe }}	
 
 If you want to define the selected locale from the backend set the `bablic.locale` after the snippet
 
